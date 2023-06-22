@@ -21,7 +21,7 @@ import com.example.anywheremobile.model.RelatedTopic
 class AnywhereMobileAdapter(private val context: Context):
     RecyclerView.Adapter<AnywhereMobileAdapter.AnywhereMobileViewHolder>(){
 
-    private var mList = listOf<RelatedTopic>()
+    var mList = listOf<RelatedTopic>()
 
     fun setData(mList: List<RelatedTopic>){
         this.mList = mList
